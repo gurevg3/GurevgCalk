@@ -19,30 +19,34 @@ namespace GurevgCalk
 
         private void Adder_Click(object sender, EventArgs e)
         {
+            AdderClass adderClass = new AdderClass();
             double first = Convert.ToDouble(Operand1.Text);
             double second = Convert.ToDouble(Operand2.Text);
-            Result.Text = (first + second).ToString();
+            Result.Text =adderClass.Calculate(first,second).ToString();
         }
 
         private void Substraction_Click(object sender, EventArgs e)
         {
+            SubClass subClass = new SubClass();
             double first = Convert.ToDouble(Operand1.Text);
             double second = Convert.ToDouble(Operand2.Text);
-            Result.Text = (first - second).ToString();
+            Result.Text = subClass.Calculate(first,second).ToString();
         }
 
         private void Multiplayer_Click(object sender, EventArgs e)
         {
+            MultiClass multiClass = new MultiClass();
             double first = Convert.ToDouble(Operand1.Text);
             double second = Convert.ToDouble(Operand2.Text);
-            Result.Text = (first * second).ToString();
+            Result.Text = multiClass.Calculate(first,second).ToString();
         }
 
         private void Devision_Click(object sender, EventArgs e)
         {
+            DevisClass devisClass = new DevisClass();
             double first = Convert.ToDouble(Operand1.Text);
             double second = Convert.ToDouble(Operand2.Text);
-            Result.Text = (first / second).ToString();
+            Result.Text = devisClass.Calculate(first,second).ToString();
         }
 
     }
