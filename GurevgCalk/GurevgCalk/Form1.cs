@@ -16,5 +16,34 @@ namespace GurevgCalk
         {
             InitializeComponent();
         }
+
+        private void Adder_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(Operand1.Text);
+            double second = Convert.ToDouble(Operand2.Text);
+            Result.Text = (first + second).ToString();
+        }
+
+        private void Substraction_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(Operand1.Text);
+            double second = Convert.ToDouble(Operand2.Text);
+            Result.Text = (first - second).ToString();
+        }
+
+        private void Multiplayer_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(Operand1.Text);
+            double second = Convert.ToDouble(Operand2.Text);
+            Result.Text = (first * second).ToString();
+        }
+
+        private void Devision_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(Operand1.Text);
+            double second = Convert.ToDouble(Operand2.Text);
+            Result.Text = (first / second).ToString();
+        }
+
     }
 }
